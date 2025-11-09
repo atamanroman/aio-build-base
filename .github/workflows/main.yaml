@@ -1,7 +1,11 @@
 # see: https://docs.github.com/en/actions/tutorials/publish-packages/publish-docker-images#publishing-images-to-github-packages
 name: Create and publish a Docker image
 
-on: push
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '0 3 * * *' # 3 AM UTC every day
 
 env:
   REGISTRY: ghcr.io
