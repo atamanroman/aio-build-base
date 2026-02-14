@@ -1,3 +1,3 @@
 # AIO Build Base
 
-Build base image for my homelab.
+Build base images for my homelab.
